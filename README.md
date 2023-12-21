@@ -15,11 +15,11 @@ In this approach, historical stock price data, including relevant features such 
 
 5. **Prediction:** The trained LSTM model can then be deployed to predict future stock prices based on new input data. These predictions provide insights that investors and traders can use to inform their decision-making processes.
 
-*It's important to note that while neural networks, specifically LSTMs, have shown promise in capturing complex patterns in stock data, stock markets are inherently unpredictable, and predictions are subject to various uncertainties. Additionally, the success of the model depends on the quality and relevance of the input features, the amount of historical data available, and the continuous adaptation of the model to changing market conditions.*
+**It's important to note that while neural networks, specifically LSTMs, have shown promise in capturing complex patterns in stock data, stock markets are inherently unpredictable, and predictions are subject to various uncertainties. Additionally, the success of the model depends on the quality and relevance of the input features, the amount of historical data available, and the continuous adaptation of the model to changing market conditions.**
 
 ---
-*Database*
-In this stock prediction model, the historical stock price data is sourced from the Yahoo Finance API (yfinance). Yahoo Finance provides a comprehensive and reliable database that includes a wealth of financial information. The data is retrieved by specifying a date range, allowing for the selection of a relevant time frame for training and testing the neural network.
+**Database**
+In this stock prediction model, the historical stock price data is sourced from the Yahoo Finance python module (yfinance). Yahoo Finance provides a comprehensive and reliable database that includes a wealth of financial information. The data is retrieved by specifying a date range, allowing for the selection of a relevant time frame for training and testing the neural network.
 
 The chosen parameters for the stock data include the Close price, which represents the final traded price of a stock within a given trading day, and the Market Average calculated over various intervals, such as 100 days and 200 days. These parameters play a crucial role in capturing trends and patterns in the stock market.
 
@@ -27,6 +27,6 @@ The utilization of yfinance simplifies the data acquisition process, providing a
 
 It's important to note that the accuracy of the model is not only dependent on the architecture of the neural network but also on the quality and representativeness of the historical data. The choice of an appropriate date range and relevant parameters is fundamental to ensuring the model's effectiveness in capturing the underlying patterns in the stock market dynamics.
 
-*Accuracy Percentage*
+**Accuracy Percentage**
 The model's accuracy is assessed using metrics such as Mean Squared Error (MSE), providing insights into the predictive performance of the model. Additionally, an "Accuracy Percentage" is calculated for illustrative purposes, although it's important to note that this is not a standard metric for regression tasks.
 *mean_squared_error(MSE)*: 14392428.855714077
